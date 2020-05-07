@@ -1,9 +1,12 @@
 import React from 'react';
 
-const App: React.FC = () => {
-  return (
-   <h1>Hello TypeScript</h1>
-  );
-}
+import Navbar from './components/Navbar';
+
+const App: React.FC = () => (
+  <>
+    <Navbar />
+    <div>Rest of Application will be here</div>
+  </>
+)
 
 export default App;
