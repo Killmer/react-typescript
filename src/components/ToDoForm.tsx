@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-interface ToDoFormProps {
+interface TodoFormProps {
     onAdd(title: string): void
 }
 
-const ToDoForm: React.FC<ToDoFormProps> = props => {
+const TodoForm: React.FC<TodoFormProps> = props => {
     const [title, setTitle] = useState<string>('');
 
     const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,4 +35,4 @@ const ToDoForm: React.FC<ToDoFormProps> = props => {
     )
 };
 
-export default ToDoForm;
+export default TodoForm;
